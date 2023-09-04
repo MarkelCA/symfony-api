@@ -26,14 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ModuleA\\": "src/ModuleA",
-            "ModuleB\\": "src/ModuleB"
+            "App\\": "src/",
+            "ModuleA\\": "src/ModuleA"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ModuleA\\Tests\\": "tests/ModuleA",
-            "ModuleB\\Tests\\": "tests/ModuleB"
+            "ModuleA\\Tests\\": "tests/ModuleA"
         }
     },
     "replace": {
