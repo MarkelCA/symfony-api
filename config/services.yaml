@@ -1,3 +1,4 @@
 imports:
     - { resource: 'services/module_a.yaml' }
     - { resource: 'services/module_b.yml' }
+    - { resource: 'services/submodule/a.yml' }

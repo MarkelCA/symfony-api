@@ -1,4 +1,9 @@
 module_a_health_check:
   path: /health-check
-  controller: ModuleA\Controller\HealthCheckController
+  controller: ModuleA\Controller\ModuleAController
+  methods: [ GET ]
+
+module_a_list:
+  path: /list
+  controller: ModuleA\Controller\ModuleAController::list
   methods: [ GET ]

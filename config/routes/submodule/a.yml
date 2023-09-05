@@ -1,0 +1,4 @@
+submodule_a_list:
+  path: /health-check
+  controller: ModuleA\SubmoduleA\Controller\SubmoduleAController
+  methods: [ GET ]

@@ -2,6 +2,10 @@ module_a:
   resource: 'routes/module_a.yaml'
   prefix: 'a'
 
+submodule_a:
+  resource: 'routes/submodule/a.yml'
+  prefix: 'a/suba'
+
 module_b:
   resource: 'routes/module_b.yml'
   prefix: 'b'
