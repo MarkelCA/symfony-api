@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+MAPPINGS_FOLDER="./xml/"
+
+for file in $(ls $MAPPINGS_FOLDER | grep ".dcm.xml\$") ; do
+    # Simplify file names
+    sed 's/entity name.*\\\(.*\)/entity name="\1/' "$MAPPINGS_FOLDER/$file" -i
+
+    # Change name from *.dcm.xml to *.orm.xml
+    new_name=$(echo "$file" | sed "s/dcm/orm/")
+    mv "$MAPPINGS_FOLDER/$file" "$MAPPINGS_FOLDER/$new_name"
+done;
